@@ -1,0 +1,11 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore any log files
+*.log
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore any API keys or sensitive information
+config.js
