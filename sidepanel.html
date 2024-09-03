@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guru Sidepanel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="login-form" class="container">
+    <h2>Guru API Credentials</h2>
+    <form id="credentials-form">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="input-group">
+        <label for="token">API Token</label>
+        <input type="password" id="token" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+
+  <div id="main-content" class="container">
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search Guru cards...">
+      <div class="search-icon">🔍</div>
+    </div>
+    <button id="collapse-button" class="collapse-button" style="display: none;">Hide Results</button>
+    <div id="suggestions"></div>
+    <div id="cards-container"></div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
